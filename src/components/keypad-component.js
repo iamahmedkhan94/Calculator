@@ -1,5 +1,9 @@
 import React from "react";
-
+/**
+ *
+ * @param {function} param0
+ * Display Keypad
+ */
 const KeyPadComponent = ({ onClick }) => {
   return (
     <div className="button">

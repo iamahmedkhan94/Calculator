@@ -1,3 +1,7 @@
+/**
+ * All imports
+ */
+
 import React, { useState } from "react";
 import "./App.css";
 import ResultComponent from "./components/result-component";
@@ -5,10 +9,17 @@ import KeyPadComponent from "./components/keypad-component";
 import Service from "./service/service";
 
 const App = () => {
+  /**
+   * state variable
+   */
   const [result, setResult] = useState("");
 
+  /**
+   *
+   * @param {string} button
+   * onClick function when button pressed
+   */
   const onClick = (button) => {
-    console.log("button", button);
     if (button === "=") {
       const response = Service.calculate(result);
       setResult(response);
@@ -27,8 +38,8 @@ const App = () => {
     <div>
       <div className="calculator-body">
         <h1>Test Calculator</h1>
-        <ResultComponent result={result} />
-        <KeyPadComponent onClick={onClick} />
+        <ResultComponent result={result} /> {/** result component */}
+        <KeyPadComponent onClick={onClick} /> {/** keypad component */}
       </div>
     </div>
   );
