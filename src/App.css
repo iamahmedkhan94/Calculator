@@ -1,26 +1,35 @@
 .result {
   height: 60px;
-  background-color: #bbb;
+  background-color: #181a1f;
   width: 100%;
 }
 
 .result p {
   font-size: 40px;
   margin: 5px;
+  color: #ffffff;
 }
 
 .calculator-body {
   max-width: 400px;
   margin: auto;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .button {
   display: block;
-  background-color: #bbb;
+  background-color: #1c2e4e;
 }
 
 button {
   width: 25%;
   height: 60px;
   font-size: 30px;
+  background-color: #1c2e4e;
+  color: #ffffff;
+}
+
+.buttonstyle {
+  background-color: #c44646;
 }

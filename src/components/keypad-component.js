@@ -1,9 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 
 const KeyPadComponent = ({ onClick }) => {
   return (
     <div className="button">
-      <button name="(" onClick={(e) => onClick(e.target.name)}>
+      <button
+        data-testid="btn-inc"
+        name="("
+        onClick={(e) => onClick(e.target.name)}
+      >
         (
       </button>
       <button name="CE" onClick={(e) => onClick(e.target.name)}>
@@ -12,7 +16,11 @@ const KeyPadComponent = ({ onClick }) => {
       <button name=")" onClick={(e) => onClick(e.target.name)}>
         )
       </button>
-      <button name="C" onClick={(e) => onClick(e.target.name)}>
+      <button
+        className="buttonstyle"
+        name="C"
+        onClick={(e) => onClick(e.target.name)}
+      >
         C
       </button>
       <br />
@@ -26,7 +34,11 @@ const KeyPadComponent = ({ onClick }) => {
       <button name="3" onClick={(e) => onClick(e.target.name)}>
         3
       </button>
-      <button name="+" onClick={(e) => onClick(e.target.name)}>
+      <button
+        className="buttonstyle"
+        name="+"
+        onClick={(e) => onClick(e.target.name)}
+      >
         +
       </button>
       <br />
@@ -40,7 +52,11 @@ const KeyPadComponent = ({ onClick }) => {
       <button name="6" onClick={(e) => onClick(e.target.name)}>
         6
       </button>
-      <button name="-" onClick={(e) => onClick(e.target.name)}>
+      <button
+        className="buttonstyle"
+        name="-"
+        onClick={(e) => onClick(e.target.name)}
+      >
         -
       </button>
       <br />
@@ -54,7 +70,11 @@ const KeyPadComponent = ({ onClick }) => {
       <button name="9" onClick={(e) => onClick(e.target.name)}>
         9
       </button>
-      <button name="*" onClick={(e) => onClick(e.target.name)}>
+      <button
+        className="buttonstyle"
+        name="*"
+        onClick={(e) => onClick(e.target.name)}
+      >
         x
       </button>
       <br />
@@ -65,10 +85,19 @@ const KeyPadComponent = ({ onClick }) => {
       <button name="0" onClick={(e) => onClick(e.target.name)}>
         0
       </button>
-      <button name="=" onClick={(e) => onClick(e.target.name)}>
+      <button
+        data-testid="buttonEquals"
+        className="buttonstyle"
+        name="="
+        onClick={(e) => onClick(e.target.name)}
+      >
         =
       </button>
-      <button name="/" onClick={(e) => onClick(e.target.name)}>
+      <button
+        className="buttonstyle"
+        name="/"
+        onClick={(e) => onClick(e.target.name)}
+      >
         ÷
       </button>
       <br />
